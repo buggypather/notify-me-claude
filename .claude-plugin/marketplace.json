@@ -1,0 +1,13 @@
+{
+  "name": "notify-me-claude",
+  "owner": {
+    "name": "buggypather"
+  },
+  "plugins": [
+    {
+      "name": "notify-me-claude",
+      "source": "./",
+      "description": "Desktop notifications when Claude Code starts working, needs your permission, replies while still working, or finishes."
+    }
+  ]
+}

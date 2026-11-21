@@ -1,0 +1,42 @@
+{
+  "name": "notify-me-claude",
+  "version": "1.0.0",
+  "description": "Desktop notifications when Claude Code starts working, needs your permission, replies while still working, or finishes.",
+  "type": "module",
+  "bin": {
+    "notify-me-claude": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    ".claude-plugin",
+    "hooks",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "vitest run",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "hooks",
+    "notify",
+    "notifications",
+    "toast"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buggypather/notify-me-claude"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.2.0"
+  }
+}

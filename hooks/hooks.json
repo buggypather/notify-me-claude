@@ -1,0 +1,10 @@
+{
+  "description": "Notifications when Claude starts, needs permission, replies while working, waits for you, or finishes.",
+  "hooks": {
+    "UserPromptSubmit": [{ "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/dist/hook.js\"", "async": true }] }],
+    "PermissionRequest": [{ "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/dist/hook.js\"", "async": true }] }],
+    "MessageDisplay": [{ "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/dist/hook.js\"", "async": true }] }],
+    "Notification": [{ "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/dist/hook.js\"", "async": true }] }],
+    "Stop": [{ "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/dist/hook.js\"", "async": true }] }]
+  }
+}
